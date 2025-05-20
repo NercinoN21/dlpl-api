@@ -1,0 +1,86 @@
+{
+
+    "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "FIXED"],
+    "python.terminal.activateEnvironment": false,
+    "python.languageServer": "Pylance",
+    "python.analysis.diagnosticSeverityOverrides": {
+      "reportMissingImports": "none",
+      "reportMissingModuleSource": "none"
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.venv": true,
+      "**/.DS_Store": true,
+      "**/*.pyc": {
+        "when": "$(basename).py"
+      },
+      "**/__pycache__": true,
+      "**/.idea": true,
+      "**/node_modules": true
+    },
+    "editor.formatOnSave": false,
+    "[python]": {
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": "never"
+      },
+      "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "python.testing.pytestArgs": ["src"],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": ["-v", "-s", ".", "-p", "*test*.py"],
+    "workbench.editor.scrollToSwitchTabs": true,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.profiles.windows": {
+      "Git Bash": {
+        "source": "Git Bash",
+        "icon": "terminal-bash"
+      }
+    },
+    "cSpell.words": [
+      "sisu",
+      "binascii",
+      "bson",
+      "checkpw",
+      "dbgate",
+      "dotenv",
+      "fastapi",
+      "gensalt",
+      "gmail",
+      "hashpw",
+      "healthcheck",
+      "hexlify",
+      "idsr",
+      "IDSR",
+      "INITDB",
+      "isready",
+      "itsdangerous",
+      "levelname",
+      "mongodb",
+      "odsr",
+      "ODSR",
+      "pgsetup",
+      "postgres",
+      "postgresdb",
+      "postgresql",
+      "psql",
+      "psycopg",
+      "pycache",
+      "pydantic",
+      "pymongo",
+      "pyotp",
+      "qrcode",
+      "redoc",
+      "redocs",
+      "setex",
+      "slowapi",
+      "subthemes",
+      "totp",
+      "TOTP",
+      "urandom",
+      "uvicorn",
+      "webtoken"
+    ]
+  }

@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  seu_app:
+    image: sua_imagem_do_docker
+    ports:
+      - "8000:8000"
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    environment:
+      NGROK_AUTHTOKEN: SEU_AUTHTOKEN
+    ports:
+      - "4040:4040" # Porta para o dashboard web do ngrok (opcional)
+    command: "http seu_app:8000" # Tunnel a porta 8000 do container 'seu_app'
+    depends_on:
+      - seu_app

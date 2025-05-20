@@ -1,0 +1,17 @@
+fastapi==0.115.5
+uvicorn==0.32.0
+pymongo==4.10.1
+redis==5.2.0
+alembic==1.14.0
+bcrypt==4.2.1
+python-dotenv==1.0.1
+qrcode==8.0
+pyotp==2.9.0
+ipaddress==1.0.23
+slowapi==0.1.9
+PyJWT==2.10.0
+pillow==11.0.0
+python-multipart==0.0.17
+pydantic[email]==2.9.2
+fastapi-mail==1.4.1
+itsdangerous==2.2.0

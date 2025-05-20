@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create venv Unix",
+      "type": "shell",
+      "command": "python3 -m venv venv&& source venv/bin/activate && pip install -r requirements.txt --quiet && docker compose up -d",
+      "windows": {
+        "command": "echo 'This task is for Unix systems only'"
+      }
+    },
+    {
+      "label": "Create venv Windows",
+      "type": "shell",
+      "command": "python -m venv venv && .\\venv\\Scripts\\activate && pip install -r requirements.txt --quiet  && docker compose up -d",
+      "windows": {
+        "command": "python -m venv venv; .\\venv\\Scripts\\activate; pip install -r requirements.txt  --quiet && docker compose up -d"
+      }
+    }
+  ]
+}
