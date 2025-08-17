@@ -1,6 +1,6 @@
 services:
   mongo:
-    container_name: mongo-container
+    container_name: dlpl_mongo-container
     hostname: mongo
     image: mongo:6.0 #https://hub.docker.com/_/mongo
     environment:
@@ -15,7 +15,7 @@ services:
       - development
   redis:
     image: redis:7.0.4-alpine #https://hub.docker.com/_/redis
-    container_name: redis-container
+    container_name: dlpl_redis-container
     hostname: redis
     expose:
       - 6379
@@ -31,7 +31,7 @@ services:
       - development
   dbgate:
     image: dbgate/dbgate:5.5.6-alpine # https://hub.docker.com/r/dbgate/dbgate
-    container_name: dbgate
+    container_name: dlpl_dbgate
     hostname: dbgate-webserver
     volumes:
       - dbgate-data:/root/.dbgate
